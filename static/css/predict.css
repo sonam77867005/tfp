@@ -1,0 +1,45 @@
+@media screen and (max-width: 900px){
+    .sonam{
+        background-color:rgb(255, 238, 139);
+        -webkit-mask: none;
+    
+        
+    }
+    .conatainer-fluid{
+        margin-right: 10px;
+        margin-left: 10px;
+        -webkit-mask: none;
+    
+        
+    }
+    h1{
+        font-size: 23px;
+        font-weight: bolder;
+    }
+
+}
+@media screen and (min-width: 900px){
+.sonam{
+    background-color:#f97305;
+    --mask:
+    radial-gradient(113.21px at 156.00px 50%,#000 99%,#0000 101%) 0 calc(50% - 120px)/51% 240px repeat-y,
+    radial-gradient(113.21px at -96px 50%,#0000 99%,#000 101%) 60px 50%/calc(51% - 60px) 240px repeat-y,
+        radial-gradient(113.21px at calc(100% - 156.00px) 50%,#000 99%,#0000 101%) 100% calc(50% - 120px)/51% 240px repeat-y,
+    radial-gradient(113.21px at calc(100% + 96.00px) 50%,#0000 99%,#000 101%) calc(100% - 60px) 50%/calc(51% - 60px) 240px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+.conatainer-fluid{
+    background-color:rgb(241, 238, 14);
+    --mask:
+    radial-gradient(113.21px at 156.00px 50%,#000 99%,#0000 101%) 0 calc(50% - 120px)/51% 240px repeat-y,
+    radial-gradient(113.21px at -96px 50%,#0000 99%,#000 101%) 60px 50%/calc(51% - 60px) 240px repeat-y,
+        radial-gradient(113.21px at calc(100% - 156.00px) 50%,#000 99%,#0000 101%) 100% calc(50% - 120px)/51% 240px repeat-y,
+    radial-gradient(113.21px at calc(100% + 96.00px) 50%,#0000 99%,#000 101%) calc(100% - 60px) 50%/calc(51% - 60px) 240px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+    
+}
+}
+
+

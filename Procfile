@@ -1,0 +1,1 @@
+web: gunicorn TaxiPricePrediction.wsgi --log-file -

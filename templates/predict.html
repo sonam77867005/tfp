@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Predict Taxi Fare{% endblock %}
+{% block content %}
+<div class="content" style="margin:0px;width:100%;background-color:#FFA500;">
+    <div class="container sonam">
+<div class="conatainer-fluid pt-3 pb-5 " >
+    <div class="row justify-content-md-center">
+        <div class="col-md-5">
+            <hr>
+            <h1>Taxi Fare Prediction</h1>
+            <hr class="mb-4">
+            <form action="result" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="from_source">From (Source) </label>
+                    <input name="from_source" type="text"  class="form-control my-1" id="fs" placeholder="" required style="border-radius:20px;">
+                </div>
+                <div class="form-group">
+                    <label for="to_destination">To (Destination)</label>
+                    <input name="to_destination" type="text" class="form-control my-1" id="to_destination" placeholder="" required style="border-radius:20px;">
+                </div>
+                <div class="form-group">
+                    <label for="distance">Distance(km)</label>
+                    <input name="distance" type="text"  class="form-control my-1" id="distance" placeholder="" required style="border-radius:20px;">
+                </div>
+                <div class="form-group">
+                    <label for="fuel_price">Fuel Price</label>
+                    <input name="fuel_price" type="text"  class="form-control my-1" id="fuel_price" placeholder="" required style="border-radius:20px;">
+                </div>
+                <div class="form-group">
+                    <label for="fuel_consumption">Fuel Consumption</label>
+                    <input name="fuel_consumption" type="text"  class="form-control my-1" id="fuel_consumption" placeholder="" required style="border-radius:20px;">
+                </div>
+                <center>
+                <button type="submit" value="Submit"  class="btn-lg btn-warning my-4" style="padding-left:40px;padding-right:40px;border-radius:20px;">Submit</button>
+            </center>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+{% endblock %}

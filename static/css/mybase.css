@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+    
+
+}
+nav{
+    background-color: #ffff;
+    height: 70px;
+}
+@media screen and (max-width: 900px) {
+    nav{
+        background-color: #ffff;
+        height: auto;
+    }
+    
+  }
+  .navbar-toggler .n{
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+
+  }
+  .navbar-toggler .navbar-toggler-icon{
+    background-image: url('../img/menu.png');
+   
+  } 
+body{
+  background-image: url("../img/bg.svg");
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+.nav-item {
+    padding-left: 40px;
+    
+}
+@media screen and (max-width: 900px) {
+    .nav-item {
+        padding-left: 0px;
+        
+    }
+    
+  }
+.nav-link:hover{
+    background-color:rgba(206, 206, 206, 0.502);
+    border-radius: 50px;
+    
+}
+
+a{
+  text-decoration: none;
+}
+.taxi-img{
+  position:absolute;
+}

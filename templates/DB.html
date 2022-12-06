@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Data Base{% endblock %}
+{% block content %}
+<div class="table-responsive" style="height:50vh;background-color:#ffffff;">
+    <table class="table">
+      <thead>
+        <tr class="table-active bg-warning" style="color:#ffffff;">
+          <th scope="col">#</th>
+          <th scope="col">From</th>
+          <th scope="col">To</th>
+          <th scope="col">Distance</th>
+          <th scope="col">Fuel Price</th>
+          <th scope="col">Fuel Consumption</th>
+          <th scope="col">Taxi Fare(Your Prediction)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in dataset %}
+        <tr>
+          <th scope="row">{{ data.id }}</th>
+          <td>{{data.from_source}}</td>
+          <td>{{data.to_destination}}</td>
+          <td>{{data.distance}}</td>
+          <td>{{data.fuel_price}}</td>
+          <td>{{data.fuel_consumption}}</td>
+          <td>{{data.result}}</td>
+          
+        </tr>
+        {% endfor %}
+   
+      
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

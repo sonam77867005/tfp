@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container-fluid" style="padding:20px;">
+<div class="d-flex flex-column" style="
+--mask:
+radial-gradient(67.08px at 50% calc(100% - 90.00px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+radial-gradient(67.08px at 50% calc(100% + 60.00px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+-webkit-mask: var(--mask);
+      mask: var(--mask);
+background-color:#eeeeee;padding:20px;border-radius: 20px;box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
+  <div style="display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  ">
+  <div class="result-content">
+    <div class="p-1"><p>From: <strong>{{s}}</strong></p></div>
+    <div class="p-1"><p>To: <strong>{{to}}</strong></p></div>
+    <div class="p-1"><p>Distance: <strong>{{dis}}</strong></p></div>
+    <div class="p-1"><p>Fuel Price: <strong>{{fp}}</strong></p></div>
+    <div class="p-1"><p>Fuel Consumption: <strong>{{fc}}</strong></p></div>
+    <div class="p-1"><p style="color:rgb(140, 82, 1);">Your Taxi Fare Prediction:<strong>NU.{{r}}</strong></p></div>
+    <div class="buuton">
+        <button type="button" class="btn btn-warning" style="margin-top:10px;border-radius: 50px;box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;"><a href="predict" style="text-decoration:none;color:rgb(43, 41, 41);">Predict Again</a></button>
+    </div>
+  </div>
+    <div class="img">
+      <img class="img-fluid" src="../static/img/taxii.png" alt="">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}
+

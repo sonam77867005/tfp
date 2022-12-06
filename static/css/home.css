@@ -1,0 +1,63 @@
+.herobanner{
+    margin-top: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, red , yellow);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.hero-text-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-text-container img{
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.taxi-price-prediction-in-bhuta {
+    font-weight: 800;
+    color:rgb(203, 82, 7);
+    padding-left: 20px;
+    text-shadow: 0 4px 4px rgba(10, 235, 96, 0.687), 0 4px 4px rgba(229, 219, 39, 0.25),
+      0 4px 4px rgba(229, 219, 39, 0.25), 0 4px 4px rgba(229, 219, 39, 0.25),
+      0 4px 4px rgba(229, 219, 39, 0.25), 0 4px 4px rgba(229, 219, 39, 0.25),
+      0 4px 4px rgba(229, 219, 39, 0.25), 0 4px 4px rgba(229, 219, 39, 0.25);
+    -webkit-text-stroke: 1px rgb(203, 82, 7);
+  }
+  .taxi{
+    font-size: larger;
+}
+
+  
+  @media screen and (max-width: 900px) {
+    .taxi-price-prediction-in-bhuta{
+        font-size: small;
+        padding-left: 20px;
+        padding-top: 20px;
+        text-shadow: 0 4px 4px rgba(252, 247, 247, 0.25);
+        -webkit-text-stroke: 0.1px #ffffff;
+    }
+    .taxi{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    
+  }
+ 
+  .form{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(249, 249, 11, 0.619);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
